@@ -11,6 +11,7 @@ bot.on('text', (ctx) => {
     var api_url = `http://api.brainshop.ai/get?bid=${process.env.BRAINSHOP_BID}&key=${process.env.BRAINSHOP_KEY}&uid=${ctx.message.chat.id}&msg=${ctx.message.text}`
     axios(api_url)
         .then(response => ctx.reply(response.data.cnt))
+        .catch(error => ctx.reply(`${error}`))
 })
 
 bot.launch()
