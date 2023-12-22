@@ -12,4 +12,6 @@
     "DOTENV_VERSION": "16.0.3",
     "TELEGRAF_VERSION": "4.10.0"
   },
-   
+  "envSecrets": {},
+  "framework": null
+}
