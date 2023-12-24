@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": ".24.0",
-    "dotenv": ".0.0",
+    "dotenv": "10.0.0",
     "node-telegram-bot-api": ".53.0"
   }
 }
