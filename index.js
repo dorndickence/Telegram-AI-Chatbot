@@ -19,7 +19,7 @@ bot.onText(/^!/, async (msg) => {
   const message = msg.text.slice(1); // Remove the "!" prefix
 
   try {
-    const response = await axios.get(http://api.brainshop.ai/get?bid=${process.env.BRAINSHOP_BOT_ID}&key=${process.env.BRAINSHOP_API_KEY}&uid=${chatId}&msg=${encodeURIComponent(message)});
+    const response = await axios.get(`http://api.brainshop.ai/get?bid=${process.env.BRAINSHOP_BOT_ID}&key=${process.env.BRAINSHOP_API_KEY}&uid=${chatId}&msg=${encodeURIComponent(message)}`);
     bot.sendMessage(chatId, response.data.cnt);
   } catch (error) {
     console.error(error);
